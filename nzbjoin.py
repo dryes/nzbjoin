@@ -95,7 +95,7 @@ if __name__ == '__main__':
         try:
             f.write(content)
         except:
-            print('error writing nzb: %s' % args['output'])
+            print('error writing nzb: %s' % output)
             sys.exit(1)
 
     print('successfully wrote nzb file to: %s' % output)
