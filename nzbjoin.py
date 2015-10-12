@@ -70,6 +70,10 @@ if __name__ == '__main__':
     content += '<nzb xmlns="http://www.newzbin.com/DTD/2003/nzb">\n'
 
     args = init_argparse()
+
+    if len(args['input']) == 0:
+        sys.exit(0)
+
     for f in args['input']:
         nzbcontent = main(f)
         if nzbcontent == False:
