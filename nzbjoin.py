@@ -54,11 +54,11 @@ def main(nzbfile):
             content += '\t\t<group>%s</group>\n' % (g)
         content += '\t</groups>\n'
 
-        content += '\t\t<segments>\n'
+        content += '\t<segments>\n'
         for s in f.segments:
-            content += '\t\t\t<segment bytes="%s" number="%s">%s</segment>\n' % \
+            content += '\t\t<segment bytes="%s" number="%s">%s</segment>\n' % \
                 (str(s.bytes), str(s.number), s.message_id)
-        content += '\t\t</segments>\n'
+        content += '\t</segments>\n'
 
         content += '</file>\n'
 
