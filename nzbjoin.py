@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 
 # Author: Joseph Wiseman <joswiseman@cock.li>
-# URL: https://github.com/d2yes/nzbjoin/
+# URL: https://github.com/dryes/nzbjoin/
 
 import argparse,cgi,os,sys
 from datetime import date
